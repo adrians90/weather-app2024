@@ -1,0 +1,125 @@
+:root {
+    --background-light: rgba(0, 0, 0, 0.6);
+    --font-color: #f1f5f9;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-image: url("./background1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 1.6rem;
+}
+
+header {
+    font-size: 2.4rem;
+    color: var(--font-color);
+}
+
+button, input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    padding: 2rem;
+    background-color: var(--background-light);
+}
+
+.page-title {
+    text-align: center;
+}
+
+.main {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.form {
+    padding: 1rem;
+    text-align: center;
+}
+
+.input {
+    margin-right: 0.5rem;
+    background-color: var(--background-light);
+    color: var(--font-color);
+    border: 2px solid transparent;
+}
+
+.btn {
+    background-color: var(--background-light);
+    color: var(--font-color);
+    transition: border 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border: 2px solid var(--background-light);
+}
+
+.btn:active {
+    color: #999;
+}
+
+.search-results {
+    display: none;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 4rem auto;
+    background-color: var(--background-light);
+    color: var(--font-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-results * {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.search-results h3 {
+    border-radius: 8px;
+    color: var(--font-color);
+    font-size: 3rem;
+}
+
+.search-results p {
+    font-size: 1.5rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
+
