@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="page-title">Local Weather</h1>
+    </header>
+    <main class="main">
+        <form class="form" id="searchForm" novalidate>
+            <input type="text" class="input" id="searchInput" placeholder="Enter city name">
+            <button class="btn btn-submit" type="submit" data-search-btn>Search</button>
+        </form>
+        
+        <div class="search-results" data-search-results>
+            <h3 data-city-name></h3>
+            <p data-temperature></p>
+            <p data-feels-like></p>
+            <p data-humidity></p>
+            <p data-wind></p>
+        </div>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>
