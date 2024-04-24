@@ -1,4 +1,4 @@
-#Weather-App2024
+**Weather-App2024**
 
 Second attempt at building a Weather App in order to practice working with APIs, JS Promises and bundling with Webpack.
 
